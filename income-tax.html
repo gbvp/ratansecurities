@@ -307,7 +307,7 @@
 
                             if (valid) {
                                 jQuery.ajax({
-                                    url: "https://test2live.com/ratan/contact_mail.php",
+                                    url: "https://test2live.com/tulsi/contact_mail.php",
                                     data: 'userName=' + $("#userName").val() + '&userEmail=' + $("#userEmail").val() + '&mobile=' + $("#mobile").val() + '&message=' + $("#message").val(),
                                     // data:'userName='+$("#userName").val()+'&userEmail='+$("#userEmail").val()+'&mobile='+$("#mobile").val()+'&userCity='+$("#userCity").val()+'&message='+$("#message").val()+'&captcha='+$("#captcha").val(),
                                     type: "POST",
@@ -360,11 +360,7 @@
                                 $("#message").css('background-color', '#FFFFDF');
                                 valid = false;
                             }
-                            if (!$("#captcha").val()) {
-                                $("#captcha-info").html("(required)");
-                                $("#captcha").css('background-color', '#FFFFDF');
-                                valid = false;
-                            }
+                            
 
                             return valid;
                         }
